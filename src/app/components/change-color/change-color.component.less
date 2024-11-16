@@ -1,0 +1,25 @@
+@border: 1px solid black;
+
+.container {
+  margin: 20px;
+  font-family: sans-serif;
+}
+
+.button {
+  background-color: green;
+  border: @border;
+  padding: 10px;
+  color: coral;
+  text-transform: uppercase;
+
+  &:active {
+    color: white;
+  }
+}
+
+.text-box {
+  font-size: 16px;
+  width: 200px;
+  border: @border;
+  margin-top: 20px;
+}
