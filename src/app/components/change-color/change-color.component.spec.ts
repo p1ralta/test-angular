@@ -16,6 +16,7 @@ describe('ChangeColorComponent', () => {
 
   describe('#changeTextColor', () => {
     it('set box color to green', () => {
+      // test
       component.box = { nativeElement: { style: { color: 'black' } } };
       component.changeTextColor();
 
