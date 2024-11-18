@@ -15,6 +15,7 @@ describe('ChangeColorComponent', () => {
   });
 
   describe('#changeTextColor', () => {
+    // test
     it('set box color by getRandomColor result', () => {
       jest.spyOn(component, 'getRandomColor').mockReturnValue('#000000');
       component.box = {nativeElement: {style: {color: 'black'}}}
