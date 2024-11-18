@@ -15,13 +15,12 @@ describe('ChangeColorComponent', () => {
   });
 
   describe('#changeTextColor', () => {
-    // test
-    it('set box color by getRandomColor result', () => {
-      jest.spyOn(component, 'getRandomColor').mockReturnValue('#000000');
-      component.box = {nativeElement: {style: {color: 'black'}}}
+    it('set box color to green', () => {
+      // test
+      component.box = { nativeElement: { style: { color: 'black' } } };
       component.changeTextColor();
 
-      expect(component.box.nativeElement.style.color).toBe('#000000');
+      expect(component.box.nativeElement.style.color).toBe('green');
     });
   });
 });
