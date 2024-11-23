@@ -15,6 +15,7 @@ export class ChangeColorComponent {
   @ViewChild('box') box: any;
 
   public changeTextColor(): void {
+    //test
     this.box.nativeElement.style.color = 'green';
   }
 }
