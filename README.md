@@ -1,3 +1,4 @@
+[![codecov](https://codecov.io/github/p1ralta/test-angular/graph/badge.svg?token=09H56Z8TJL)](https://codecov.io/github/p1ralta/test-angular)
 # TestAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
