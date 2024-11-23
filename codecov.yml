@@ -1,0 +1,20 @@
+codecov:
+  require_ci_to_pass: yes
+coverage:
+  precision: 2
+  round: down
+  range: "70...100"
+
+  status:
+    project:
+      default:
+        target: auto  # Automatically target the percentage of your base commit
+        threshold: 1%  # Allows the coverage to drop by no more than 1%
+        base: auto  # Automatically pick the base of the pull request as a reference
+        if_ci_failed: error  # If CI fails, the commit status will be set to error
+    patch:
+      default:
+        target: auto  # Same as above
+        threshold: 0%  # Disallow dropping coverage in the patches
+        base: auto  # Same as above
+        if_ci_failed: error  # Same as above
