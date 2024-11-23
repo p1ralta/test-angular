@@ -6,9 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "jest",
+    "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
     "prepare": "husky",
     "release": "standard-version"
   },
@@ -55,6 +54,9 @@
         "tsConfig": "<rootDir>/tsconfig.spec.json",
         "stringifyContentPathRegex": "\\.html$"
       }
-    }
+    },
+    "collectCoverage": true,
+    "coverageReporters": ["json", "lcov", "text", "clover"],
+    "coverageDirectory": "coverage"
   }
 }
